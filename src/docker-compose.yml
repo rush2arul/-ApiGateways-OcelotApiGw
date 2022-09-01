@@ -1,0 +1,5 @@
+  oce:
+    image: ocew
+    build:
+      context: .
+      dockerfile: ApiGateways/OcelotApiGw/Dockerfile  
