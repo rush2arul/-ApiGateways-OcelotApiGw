@@ -20,7 +20,8 @@ pipeline {
      regexpFilterExpression: 'refs/heads/' + BRANCH_NAME
     )
   }
-
+stages 
+{
     stage('Build') {
       steps {
 	 dir('src')
@@ -41,4 +42,4 @@ pipeline {
       		}
     		}
   	}
-
+}
