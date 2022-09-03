@@ -36,8 +36,9 @@ stages
 
 	 dir('src')
 	        {       
-        	sh 'docker run ocelotapigw'  
-        	}
+	sh '/home/arul/MUTHOOT/CUSTOM/DOCKER_COMPOSE/stopbyname.sh ocelotapigw'	
+	sh 'docker run -d --env-file env.ocelotapigw  -p "8010:80"  --name ocelotapigw ocelotapigw'
+		}
 
       		}
     		}
